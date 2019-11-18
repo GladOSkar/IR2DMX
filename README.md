@@ -25,4 +25,4 @@ Electronic schematics and 3D models may be uploaded later.
 
 ## License
 
-See [[./LICENSE]]
+See [LICENSE](LICENSE)
