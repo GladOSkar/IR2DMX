@@ -7,6 +7,15 @@
  *  - Improve structure, split into multiple files
  */
 
+/* HARDWARE NOTES:
+ *  - Pin A0 is wired to a bunch of IR Photodiodes in parallel with a fairly big resistor. All to ground.
+ *  - Pins A1-A6 are wired to linear potentiometers configured as variable voltage dividers. We used 10k.
+ *  - Pins 2-5 are the data pins for the LCD. Exact mappings see below. Use manual.
+ *  - Pin 6 is wired to the "Transmit" pin of a RS-485 Transceiver. Hook that up the way the manual says!
+ *  - Pins 7-10 are wired to the buttons. Active HIGH. Exact mappings see below.
+ *  - Pins 11 and 12 are control pins for the LCD. Exact Mappings see below.
+ */
+
 // DMX-512 channels
 #define DEFAULT_CH_L 300
 #define DEFAULT_CH_R 400
