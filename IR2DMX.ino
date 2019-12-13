@@ -65,9 +65,9 @@ void setup(void) {
   lcd.begin(16, 2);
 
   lcd.setCursor(0, 0);
-  lcd.print("L A*** B*** C***");
+  lcd.print("L D*** S*** E***");
   lcd.setCursor(0, 1);
-  lcd.print("R A*** B*** C***");
+  lcd.print("R D*** S*** E***");
 
 
   //Serial.begin(115200);
@@ -136,19 +136,19 @@ void updateDisplay(void) {
     return;
 
   lcd.setCursor(0, 0);
-  lcd.print("L A");
+  lcd.print("L D");
   print3digit(outputs[L].vals[0]);
-  lcd.print(" B");
+  lcd.print(" S");
   print3digit(outputs[L].vals[1]);
-  lcd.print(" C");
+  lcd.print(" E");
   print3digit(outputs[L].vals[2]);
 
   lcd.setCursor(0, 1);
-  lcd.print("R A");
+  lcd.print("R D");
   print3digit(outputs[R].vals[0]);
-  lcd.print(" B");
+  lcd.print(" S");
   print3digit(outputs[R].vals[1]);
-  lcd.print(" C");
+  lcd.print(" E");
   print3digit(outputs[R].vals[2]);
 
 }
